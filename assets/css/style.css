@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+.o-hidden {
+  overflow: hidden;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -24,10 +28,17 @@ body {
   flex-direction: column;
 }
 .hero__title {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 64px;
   line-height: 74px;
   color: #084c9f;
   margin-bottom: 24px;
+}
+.hero__word {
+  display: inline-block;
+  transform: translateY(100%);
+  visibility: hidden;
 }
 .hero__info {
   color: #38486e;
@@ -45,12 +56,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  clip-path: inset(33% 0 44% 0);
+  clip-path: inset(37% 0 39% 0);
   z-index: 1;
 }
 .hero__img .oval-container {
   position: absolute;
-  top: 232px;
+  top: 274px;
   left: -88px;
 }
 .hero__img .oval-container .atom-container svg {

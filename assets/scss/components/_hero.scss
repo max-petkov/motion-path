@@ -12,10 +12,18 @@
   }
 
   &__title {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 64px;
     line-height: 74px;
     color: $color-primary;
     margin-bottom: 24px;
+  }
+
+  &__word {
+    display: inline-block;
+    transform: translateY(100%);
+    visibility: hidden;
   }
 
   &__info {
@@ -36,13 +44,13 @@
       position: absolute;
       top: 0;
       left: 0;
-      clip-path: inset(33% 0 44% 0);
+      clip-path: inset(37% 0 39% 0);
       z-index: 1;
     }
 
     .oval-container {
       position: absolute;
-      top: 232px;
+      top: 274px;
       left: -88px;
 
       .atom-container {

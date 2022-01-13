@@ -1,0 +1,21 @@
+.btn {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  font-weight: 600;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+
+  &-secondary {
+    background-color: $bg-secondary-dark;
+    border-color: $bg-secondary-dark;
+  }
+
+  &--outline {
+    border: 1px solid #7b8293;
+    background-color: transparent;
+    color: #000;
+  }
+}
